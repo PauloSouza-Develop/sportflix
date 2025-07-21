@@ -18,7 +18,7 @@ Ou, se preferir rodar localmente:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [https://github.com/PauloSouza-Develop/sportflix.git](https://github.com/PauloSouza-Develop/sportflix.git)
+    git clone https://github.com/PauloSouza-Develop/sportflix.git
     ```
 2.  **Navegue até o Diretório:**
     ```bash
@@ -40,4 +40,4 @@ Ou, se preferir rodar localmente:
 
 ## 📧 Contato
 
-Seu Nome - [pvds2608@gmail.com](mailto:pvds2608@gmail.com)
+Paulo Vinícius de Souza - [pvds2608@gmail.com](mailto:pvds2608@gmail.com)
