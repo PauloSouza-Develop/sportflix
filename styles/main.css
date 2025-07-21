@@ -17,6 +17,17 @@ body {
     color: white;
 }
 
+/* Header */
+
+header {
+    background: var(--preto);
+    padding: 10px 20px;
+    position: sticky;
+    width: 99%;
+    top: 0px;
+    z-index: 999;
+}
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -38,6 +49,90 @@ header nav a {
 header nav a:hover {
     color: #FFF;
 }
+
+/* Main */
+
+.slogan {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: orange;
+    text-shadow:
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000,
+                -3px 0px 0 #000,
+                3px 0px 0 #000,
+                0px -3px 0 #000,
+                0px 3px 0 #000;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    transition: 0.3s ease all;
+    position: relative;
+    overflow: hidden;
+}
+
+.centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adicione uma cor para o texto, se ele estiver sobre uma imagem escura */
+    font-size: 2em; /* Exemplo de tamanho de fonte */
+    font-weight: bold; /* Exemplo de peso da fonte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra para melhorar a legibilidade */
+
+    /* ----- MUDANÇAS AQUI ----- */
+    opacity: 0; /* Por padrão, o texto está invisível */
+    visibility: hidden; /* Garante que o texto não interaja com eventos do mouse quando invisível */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição para a aparição suave */
+
+}
+
+.item:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.item:hover .centralizado {
+    opacity: 1; /* Torna o texto totalmente visível */
+    visibility: visible; /* Torna o texto interagível */
+}
+
+.owl-theme .item .box-esporte, .banner-principal img {
+    width: 90%;
+    
+}
+
+.banner-principal {
+    width: 90%;
+    height: 40vh;
+    margin: 20px 0 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) 100%), url(/img/banner-principal.png) no-repeat;
+    background-size: cover;
+    border: 2px inset lightgray;
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.secao-banner {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Footer */
 
 .logo-footer {
     width: 30px;
